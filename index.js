@@ -95,3 +95,19 @@ console.log(adult);
 let allAges = userAges.some(userAge => userAge % 5 === 0);
 console.log(allAges);
 
+//Section C
+
+//Exercise 7: Sorting and Reversing
+
+let dataPoints = [42, 10, 500, 2, 77];
+//a
+
+let ascending = [...dataPoints].sort((a,b) => a-b);
+console.log(ascending);
+//b
+let descending = [...dataPoints].sort((a,b) => b-a);
+console.log(descending);
+
+//c
+let reversed = [...dataPoints].reverse();
+console.log(reversed);
