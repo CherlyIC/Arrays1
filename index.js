@@ -68,3 +68,17 @@ console.log(studentNames.lastIndexOf("Alice"));
 console.log(studentNames.includes("Charlie"));
 //d
 console.log(studentNames.includes("Eve"));
+
+//Exercise 5: advanced searching with find and findIndex
+
+const  products = [{id: 1, name: "Laptop", price: 1200}, 
+  {id: 2, name: "Mouse", price: 25},
+   {id: 3, name: "Keyboard", price: 75}
+  
+];
+
+let foundProduct = products.find(product => product.id ===2);
+console.log(foundProduct);
+
+
+
