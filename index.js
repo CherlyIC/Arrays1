@@ -80,5 +80,18 @@ const  products = [{id: 1, name: "Laptop", price: 1200},
 let foundProduct = products.find(product => product.id ===2);
 console.log(foundProduct);
 
+let foundindex = products.findIndex(product => product.price >= 50);
+console.log(foundindex);
 
+//Exercise 6: Checking Array Integrity (some, every)
+
+let userAges = [18, 24, 33, 16, 40];
+let minor = userAges.some(userAge => userAge < 18);
+console.log(minor);
+
+let adult = userAges.every(userAge => userAge >= 18);
+console.log(adult);
+
+let allAges = userAges.some(userAge => userAge % 5 === 0);
+console.log(allAges);
 
