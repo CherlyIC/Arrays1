@@ -54,3 +54,17 @@ const spreadCopy = [...originalScores]; // spread operator creates a shallow cop
 spreadCopy[2] = 50;
 console.log("Original Scores:", originalScores);
 console.log("Spread Copy:", spreadCopy);
+
+//section 3: searching and checking
+
+//Exercise 4: indexOf, includes, find, findIndex  finding elements 
+
+studentNames = ["Alice", "Bob", "Charlie", "Alice", "David"];
+//a 
+console.log(studentNames.indexOf("Alice"));
+//b
+console.log(studentNames.lastIndexOf("Alice"));
+//c
+console.log(studentNames.includes("Charlie"));
+//d
+console.log(studentNames.includes("Eve"));
