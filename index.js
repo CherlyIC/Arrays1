@@ -111,3 +111,21 @@ console.log(descending);
 //c
 let reversed = [...dataPoints].reverse();
 console.log(reversed);
+
+//Exercise 8: Concatenation, Joining, and Slicing
+
+let arr1 = ["A", "B"];
+let arr2 = ["C", "D"];
+let sentenceParts = ["Hello", "world", "this", "is", "great"];
+//a 
+
+let concantarray = arr1.concat(arr2);
+console.log(concantarray);
+//b 
+
+let sentencePart = sentenceParts.join(" ");
+console.log(sentencePart);
+//c
+
+let sentence = sentenceParts.slice(1,4);
+console.log(sentence);
