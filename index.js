@@ -187,3 +187,20 @@ let prices = pricesUSD.reduce((counter, price) => {
 console.log(prices);
 
 
+//section E
+//Exercise 13: Sorting Objects
+
+let users = [{name: "Zoe", age: 30}, {name: "Adam", age: 25}, {name: "Charlie", age: 30}]
+//a
+let ascendingUsers = users.sort((a,b) => a.age - b.age);
+console.log(ascendingUsers);
+//b
+let allUsers = users.sort((a,b) => {
+  if(a.age !== b.age) {
+    return a.age - b.age;
+
+  } else {
+    return a.name.localeCompare(b.name);
+  }
+});
+console.log(allUsers);
