@@ -164,4 +164,26 @@ console.log(averageScore);
 let belowAverage = testScores.filter(testScore => testScore < averageScore);
 console.log(belowAverage);
 
+//Exercise 12  Aggregating Data (reduce)
+
+pricesUSD = [10.50, 20.00, 5.25]
+//a
+let totalCost = pricesUSD.reduce((sum, price) => sum + price, 0);
+console.log(totalCost);
+
+//b
+
+let maxPrice = pricesUSD.reduce((max, price) => {
+    return price > max ? price : max;
+}, pricesUSD[0]);
+
+console.log(maxPrice);
+//c
+
+let prices = pricesUSD.reduce((counter, price) => {
+    return price > 15 ? counter + 1 : counter;
+}, 0);
+
+console.log(prices);
+
 
