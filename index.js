@@ -148,5 +148,20 @@ let rate = 1.3;
 let localCurrency = pricesUSD.map(price => price * rate);
 console.log(localCurrency);
 //b
-let 
+let priceStrings = pricesUSD.map(price => `Item price: $${price.toFixed(2)}`);
+console.log(priceStrings);
+
+// Exercise11:  Filtering Data (filter)
+
+testScores = [45, 78, 92, 30, 65, 88];
+//a
+let passScores = testScores.filter(testScore => testScore >= 70);
+console.log(passScores);
+//b
+let averageScore = testScores.reduce((sum, score) => sum + score, 0) / testScores.length;
+console.log(averageScore);
+
+let belowAverage = testScores.filter(testScore => testScore < averageScore);
+console.log(belowAverage);
+
 
