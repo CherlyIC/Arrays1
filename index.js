@@ -139,3 +139,14 @@ console.log(list);
 //b
 let lists = nestedList.flat(Infinity);
 console.log(lists);
+
+//section D
+//Exercise 10: map() method
+let  pricesUSD = [10.50, 20.00, 5.25];
+let rate = 1.3;
+//a
+let localCurrency = pricesUSD.map(price => price * rate);
+console.log(localCurrency);
+//b
+let 
+
