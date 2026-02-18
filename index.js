@@ -129,3 +129,13 @@ console.log(sentencePart);
 
 let sentence = sentenceParts.slice(1,4);
 console.log(sentence);
+
+//Exercice 9
+
+let nestedList = [1, [2, 3], [4, [5, 6]], 7];
+//a
+let list = nestedList.flat();
+console.log(list);
+//b
+let lists = nestedList.flat(Infinity);
+console.log(lists);
