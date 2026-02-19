@@ -204,3 +204,10 @@ let allUsers = users.sort((a,b) => {
   }
 });
 console.log(allUsers);
+
+//Exercise 14: Mapping and Filtering Objects
+let names = users.map(user => user.name);
+console.log(names);
+let ages = users.filter(user => user.age > 28);
+console.log(ages);
+
