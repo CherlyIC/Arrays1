@@ -206,8 +206,23 @@ let allUsers = users.sort((a,b) => {
 console.log(allUsers);
 
 //Exercise 14: Mapping and Filtering Objects
+//a
 let names = users.map(user => user.name);
 console.log(names);
+//b
 let ages = users.filter(user => user.age > 28);
 console.log(ages);
+
+//section F
+
+//Exercise 15: Creating and Accessing a Matrix
+//a
+let gameBoard = [
+  [3,2,5],
+  [5,6,7],
+  [8,9,4]
+];
+gameBoard[1][1] = 1;
+console.log(gameBoard);
+console.log(gameBoard[0][2]);
 
