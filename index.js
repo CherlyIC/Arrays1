@@ -222,7 +222,41 @@ let gameBoard = [
   [5,6,7],
   [8,9,4]
 ];
+//b
 gameBoard[1][1] = 1;
 console.log(gameBoard);
+//c
 console.log(gameBoard[0][2]);
+
+//Exercise 16:Looping Through a Matrix
+
+//Section G: Mini Projects
+//Exercise 17: Student Result System
+
+let students = [{name: "A", score: 85},
+   {name: "B", score: 45},
+   {name: "C", score: 92},
+   {name: "D", score: 68}
+  ];
+
+let passedStudents = students.filter(student => student.score >=70);
+console.log(passedStudents);
+//b
+
+let totalScore = students.reduce((sum, student) => {
+  return sum + student.score;
+}, 0);
+
+let average = totalScore / students.length;
+console.log("Average:", average);
+//c
+
+let topStudent = students.reduce((top, student) => {
+  if (student.score > top.score) {
+    return student;
+  } else {
+    return top;
+  }
+});
+
 
